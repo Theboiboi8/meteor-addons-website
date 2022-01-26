@@ -17,6 +17,7 @@ export default function Home() {
       <div className=' selection:bg-slate-700 selection:text-slate-400'>
         <div className={styles.container}>
         <Head>
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
           <title>Meteor Addons</title>
           <meta name="description" content="An Archive OF Addons For Meteor Client" />
           <link rel="icon" href="/favicon.ico" />
@@ -43,17 +44,19 @@ export default function Home() {
           </Text>
 
           <div className={styles.grid}>
-            <a href="/addons" className={styles.card}>
-              <h2> Browse Addons &rarr;</h2>
-              <p>View the available addons</p>
-            </a>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h2>My GitHub &rarr;</h2>
-              <p>View my GitHub page</p>
-            </a>
+            <Link href="/addons" >
+              <a className={styles.card}>
+                <h2> Browse Addons &rarr;</h2>
+                <p>View the available addons</p>
+              </a>
+            </Link>
           </div>
         </main>
+        <footer className={styles.footer} >
+            <Link href='https://github.com/Theboiboi8'>
+              Theboiboi8 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </Link>
+          </footer>
         </div>
       </div>
     </>
