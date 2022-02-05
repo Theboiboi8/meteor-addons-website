@@ -19,6 +19,7 @@ export default function Home() {
       <div className=' selection:bg-slate-700 selection:text-slate-400'>
       <div className={styles.container}>
         <Head>
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
           <title>Meteor Addons - Addons</title>
           <meta name="description" content="Browse Addons" />
           <link rel="icon" href="/favicon.ico" />
